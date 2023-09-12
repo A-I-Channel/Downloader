@@ -2282,7 +2282,7 @@ def on_ui_tabs():
         else:
             batchlinks.queue(64).launch(share=True)
     else:
-        return (batchlinks, "Batchlinks Downloader", "batchlinks"),
+        return (batchlinks, "Downloader", "batchlinks"),
 if not sdless:
     script_callbacks.on_ui_tabs(on_ui_tabs)
 else:
