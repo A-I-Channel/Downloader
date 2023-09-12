@@ -2107,7 +2107,7 @@ def on_ui_tabs():
                 helphider = gr.Checkbox(value=False, label="Hide Help", interactive=True)
             knowmore = gr.Markdown(knowmoretext)
         with gr.Group():
-          command = gr.Textbox(label="Links", {testboxplaceholder}, lines=5)
+          command = gr.Textbox(label="Links", 'testboxplaceholder', lines=5)
           if gradiostate == True:
             logbox = gr.Textbox(label="Log", interactive=False)
           else:
