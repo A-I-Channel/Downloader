@@ -2106,7 +2106,7 @@ def on_ui_tabs():
                 uistretcher = gr.Checkbox(value=False, label="Stretch UI", interactive=True)
                 helphider = gr.Checkbox(value=False, label="Hide Help", interactive=True)
             knowmore = gr.Markdown(knowmoretext)
-        with gr.Group():
+        with gr.Group(value=True):
           command = gr.Textbox(label="Links", placeholder=testboxplaceholder, lines=5)
           if gradiostate == True:
             logbox = gr.Textbox(label="Log", interactive=False)
