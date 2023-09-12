@@ -2103,11 +2103,11 @@ def on_ui_tabs():
             introduction = gr.Markdown(introductiontext)
           with gr.Column(scale=1):
             with gr.Row():
-                uistretcher = gr.Checkbox(value=True, label="Stretch UI", interactive=True)
+                uistretcher = gr.Checkbox(value=False, label="Stretch UI", interactive=True)
                 helphider = gr.Checkbox(value=False, label="Hide Help", interactive=True)
             knowmore = gr.Markdown(knowmoretext)
         with gr.Group():
-          command = gr.Textbox(value=True, label="Links",  value=testboxplaceholder, lines=5)
+          command = gr.Textbox(value=True, label="Links", lines=5)
           if gradiostate == True:
             logbox = gr.Textbox(label="Log", interactive=False)
           else:
